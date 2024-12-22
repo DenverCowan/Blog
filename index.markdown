@@ -4,4 +4,5 @@
 
 layout: default 
 ---
-Home Page.
+# Home Page.
+This is the home page.
