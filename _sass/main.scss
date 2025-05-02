@@ -3,47 +3,41 @@
   color: white;
 }
 
-.navbar {
-  background-color: rgb(255, 140, 0); /* Navbar background */
+.floating-links {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   display: flex;
-  justify-content: center;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 0; /* Space inside the navbar */
-  position: relative; /* Prevent overlapping */
-  z-index: 1000; /* Ensure it appears above other content */
+  gap: 1rem;
+  z-index: 1000;
 }
-.navbar-links a {
-  text-decoration: none; /* Remove underline */
-  color: #ffffff; /* White text color */
-  font-family: 'SF Mono', monospace; /* Tech-inspired font */
+
+.floating-links a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Inter', sans-serif; /* fallback from monospace */
   font-size: 1rem;
-  font-weight: bold;
-  padding: 10px 20px; /* Add padding for button shape */
-  background-color: rgb(255, 140, 0) ; /* Orange  */
-  border: none; /* Remove default link border */
-  border-radius: 5px; /* Rounded corners */
-  transition: all 0.3s ease; /* Smooth hover effects */
+  font-weight: 500;
+  padding: 6px 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  // border: 2px solid black;
+  transition: background-color 0.2s ease;
 }
 
 /* Hover effect for buttons */
-.navbar-links a:hover {
-  background-color: rgb(58,111,146); /* blue on hover */
+.floating-links a:hover {
+  background-color: #00539b; /* Duke Blue */ 
+  color: white;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
   transform: translateY(-2px); /* Lift the button slightly */
 }
 
 /* Active effect (when clicking) */
-.navbar-links a:active {
+.floating-links a:active {
   background-color: #0e4a87; /* Even darker blue */
   box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3); /* Inner shadow */
   transform: translateY(1px); /* Button presses down */
-}
-
-/* link styling */
-a {
-	color: rgb(107, 142, 35);
 }
 
 /* Photo Styling */ 
@@ -52,14 +46,16 @@ a {
 }
 /* hero stylings. */
 .hero {
+  position: relative;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to bottom right, #006400, #32cd32);
-  color: white;
+  background: #f4efeb;
+  color: black;
 }
 
 .hero-content {
@@ -75,7 +71,7 @@ a {
 }
 
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
   color: white;
 }
@@ -88,23 +84,23 @@ a {
 .hero-links a {
   margin: 0 10px;
   padding: 10px 20px;
-  color: white;
+  color: black;
   text-decoration: none;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .hero-links a:hover {
-  background-color: white;
-  color: #2575fc;
+  background-color: #00539b;
+  color: white;
 }
 
 /* Background styling. */
 
 body {
-  background: rgb(49, 46, 51); 
-  color: white;
+  background: #f4efeb; 
+  color: black;
   font-family: 'SF Mono', 'Roboto', monospace;
   margin: 0;
   padding: 0;
@@ -113,11 +109,12 @@ body {
 
 /* headers */
 h1 {
-	text-decoration: underline;
-	color: rgb(0, 230, 230);
+	color: black; 
+  font-weight: 500;
 }
 
 .hero h1 {
 	text-decoration: none;
+  color: black;
 }
 
