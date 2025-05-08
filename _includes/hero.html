@@ -7,9 +7,30 @@
         </a>
       {% endfor %}
     </div>
+
+    <div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><img src="/assets/images/Duke_chapel.jpg" alt="Duke chapel"></li>
+      <li class="glide__slide"><img src="/assets/images/code.jpg" alt="laptop with code on it"></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Glide('.glide', {
+      type: 'carousel',
+      autoplay: 3000,    // change every 3s
+      perView: 1,
+      animationDuration: 800
+    }).mount();
+  });
+</script>
+
+
   <div class="hero-content">
-    <img src="/assets/images/profile.jpg" alt="Denver Cowan as a child" class="profile-photo">
-    <h1>Denver Cowan</h1>
+       <h1>Denver Cowan</h1>
     <p>CompSci Student @ Duke University | Prior Enlisted U.S. Army 🇺🇸</p>
     <div class="hero-links">
       <a href="https://github.com/yourusername" target="_blank">GitHub</a>
