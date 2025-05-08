@@ -4,5 +4,16 @@
 
 layout: home 
 ---
-# Home Page.
-This is the home page.
+
+<section class="blog-section">
+  <h2>Latest Posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-preview">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt }}</p>
+        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
