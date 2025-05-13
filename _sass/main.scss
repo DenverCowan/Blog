@@ -171,7 +171,7 @@ h1 {
 .blog-tiles h1 {
     font-weight: 700;
     text-align: center;
-    margin-bottom: 0px; 
+    margin-bottom: 0.01rem; 
 }
 
 .blog-tile:hover {
@@ -208,4 +208,11 @@ h1 {
     color: #f8f8f2;
 }
 
-
+/* Styling for about page */
+.about-page {
+    background-image:url('/assets/images/futuristic.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

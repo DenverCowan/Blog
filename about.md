@@ -1,7 +1,16 @@
 ---
-layout: default
+layout: about
 title: About
 ---
-# About page
+# Denver Cowan 
 
-This page tells you a little bit about me.
+<div class="about_section">
+    <h2>About</h2>
+    <p> Some text about me would go here </p>
+
+
+
+
+
+</div>
+
