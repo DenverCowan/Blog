@@ -4,16 +4,23 @@
 
 layout: home 
 ---
-
-<section class="blog-section">
-  <h2>Latest Posts</h2>
-  <ul class="post-list">
+<section class="blog-tiles">
+ <h1>Latest Posts</h1>
+  <div class="tile-grid">
     {% for post in site.posts %}
-      <li class="post-preview">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt }}</p>
-        <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
-      </li>
+      <div class="blog-tile">
+        <a href="{{ post.url }}">
+          <img src="{{ post.image }}" alt="{{ post.title }}">
+        </a>
+        <div class="tile-content">
+          <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="post-description">
+            {{ post.description | default: post.excerpt }}
+          </p>
+        </div>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 </section>
+
