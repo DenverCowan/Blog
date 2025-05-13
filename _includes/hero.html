@@ -22,15 +22,8 @@
   });
 </script>
 
-      <div class="floating-links">
-      {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" 
-           class="{% if page.url == item.link %}active{% endif %}">
-          {{ item.name }}
-        </a>
-      {% endfor %}
-    </div>
 
+    {% include nav.html %}
   <div class="hero-content">
        
     <h1>Denver Cowan</h1>
